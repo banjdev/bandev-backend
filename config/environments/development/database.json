@@ -1,0 +1,22 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "mongoose",
+      "settings": {
+        "client": "mongo",
+        "host": "clusterfirst-9s4id.mongodb.net",
+        "port": 27017,
+        "database": "banjdev",
+        "username": "banjdev",
+        "password": "0MfDJRKTjpuW6Tp2",
+        "srv": true
+      },
+      "options": {
+        "authenticationDatabase": "",
+        "ssl": true,
+        "minimize": true
+      }
+    }
+  }
+}

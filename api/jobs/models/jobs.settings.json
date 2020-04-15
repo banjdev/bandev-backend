@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "jobs",
+  "info": {
+    "name": "jobs"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "contractant": {
+      "model": "contractants"
+    },
+    "category": {
+      "type": "string"
+    },
+    "souscategories": {
+      "type": "json"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "place": {
+      "type": "string"
+    },
+    "status": {
+      "type": "json"
+    },
+    "price": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "limitdate": {
+      "type": "string"
+    },
+    "realisation_date": {
+      "type": "string"
+    },
+    "experience": {
+      "type": "string"
+    },
+    "valided": {
+      "type": "boolean"
+    },
+    "taches": {
+      "type": "json"
+    },
+    "freelancers": {
+      "type": "json"
+    },
+    "typeofwork": {
+      "type": "string"
+    },
+    "canseeit": {
+      "type": "string"
+    }
+  }
+}

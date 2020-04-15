@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "proposals",
+  "info": {
+    "name": "proposals"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "user": {
+      "model": "user-profile"
+    },
+    "job": {
+      "model": "jobs"
+    },
+    "composition": {
+      "type": "string"
+    },
+    "team": {
+      "type": "json"
+    },
+    "price": {
+      "type": "string"
+    },
+    "note": {
+      "type": "text"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "taches": {
+      "type": "json"
+    },
+    "limitdate": {
+      "type": "string"
+    },
+    "accepted": {
+      "type": "boolean"
+    },
+    "step": {
+      "type": "string"
+    },
+    "datestart": {
+      "type": "string"
+    },
+    "datefinish": {
+      "type": "string"
+    },
+    "rejected": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

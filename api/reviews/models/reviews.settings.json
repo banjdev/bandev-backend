@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "reviews",
+  "info": {
+    "name": "reviews"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "user": {
+      "model": "user-profile"
+    },
+    "contractant": {
+      "model": "contractants"
+    },
+    "job": {
+      "model": "jobs"
+    },
+    "stars": {
+      "type": "decimal"
+    },
+    "comment": {
+      "type": "text"
+    },
+    "proposal": {
+      "model": "proposals"
+    }
+  }
+}

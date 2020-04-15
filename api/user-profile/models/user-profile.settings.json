@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "user_profiles",
+  "info": {
+    "name": "userProfile"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "login": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "provider": {
+      "type": "string"
+    },
+    "avatar_url": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "mainfield": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "bio": {
+      "type": "text"
+    },
+    "typeofwork": {
+      "type": "string"
+    },
+    "rem1": {
+      "type": "string"
+    },
+    "rem2": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "devise": {
+      "type": "enumeration",
+      "enum": [
+        "HTG",
+        "USD"
+      ]
+    },
+    "education": {
+      "type": "json"
+    },
+    "availaible": {
+      "type": "boolean"
+    },
+    "realisation": {
+      "type": "json"
+    },
+    "tags": {
+      "type": "json"
+    },
+    "darkmode": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

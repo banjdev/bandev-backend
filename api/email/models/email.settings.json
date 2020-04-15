@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "emails",
+  "info": {
+    "name": "email"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "from": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "text"
+    },
+    "text": {
+      "type": "text"
+    },
+    "html": {
+      "type": "richtext"
+    },
+    "to": {
+      "type": "json"
+    },
+    "readed": {
+      "type": "json"
+    }
+  }
+}
