@@ -33,14 +33,21 @@
     "address": {
       "type": "string"
     },
-    "image": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": false
-    },
     "isadmin": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
+    },
+    "code": {
+      "type": "integer"
+    },
+    "validated": {
+      "type": "boolean",
+      "default": false,
+      "private": false,
+      "required": true
+    },
+    "code_expiration": {
+      "type": "biginteger"
     }
   }
 }

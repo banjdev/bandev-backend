@@ -5,8 +5,4 @@
  * to customize this controller
  */
 
-module.exports = {
-  async create() {
-    return "strapi";
-  },
-};
+module.exports = {};

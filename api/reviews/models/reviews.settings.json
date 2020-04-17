@@ -10,9 +10,6 @@
     "timestamps": true
   },
   "attributes": {
-    "user": {
-      "model": "user-profile"
-    },
     "contractant": {
       "model": "contractants"
     },
@@ -27,6 +24,9 @@
     },
     "proposal": {
       "model": "proposals"
+    },
+    "users": {
+      "type": "json"
     }
   }
 }

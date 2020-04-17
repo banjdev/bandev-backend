@@ -60,6 +60,10 @@
     },
     "canseeit": {
       "type": "string"
+    },
+    "proposal_accepted": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
