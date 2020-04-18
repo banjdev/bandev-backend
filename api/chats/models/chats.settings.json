@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "chats",
+  "info": {
+    "name": "chats"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "author": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "proposal": {
+      "model": "proposals"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "user",
+        "contractant"
+      ]
+    }
+  }
+}
