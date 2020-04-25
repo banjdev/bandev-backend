@@ -48,6 +48,15 @@
     },
     "code_expiration": {
       "type": "biginteger"
+    },
+    "createdby": {
+      "type": "enumeration",
+      "enum": [
+        "me",
+        "admin"
+      ],
+      "default": "me",
+      "required": true
     }
   }
 }

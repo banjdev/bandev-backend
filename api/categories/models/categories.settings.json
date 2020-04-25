@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "categories",
+  "info": {
+    "name": "categories"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "subcategory": {
+      "type": "string",
+      "unique": true,
+      "required": false
+    },
+    "main": {
+      "type": "enumeration",
+      "enum": [
+        "development",
+        "service_digital",
+        "all"
+      ],
+      "default": "development"
+    }
+  }
+}
