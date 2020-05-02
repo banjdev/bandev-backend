@@ -63,6 +63,12 @@
     },
     "proposal_accepted": {
       "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "postbyadmin": {
+      "type": "boolean",
+      "required": true,
       "default": false
     }
   }

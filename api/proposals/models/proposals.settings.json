@@ -52,6 +52,10 @@
     "rejected": {
       "type": "boolean",
       "default": false
+    },
+    "paid": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

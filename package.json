@@ -13,6 +13,7 @@
   "dependencies": {
     "@sendgrid/mail": "^7.0.0",
     "knex": "<0.20.0",
+    "nodejs-moncash-sdk": "https://github.com/ecelestin/ecelestin-Moncash-sdk-nodejs",
     "sqlite3": "latest",
     "strapi": "3.0.0-beta.19.5",
     "strapi-admin": "3.0.0-beta.19.5",

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "transactions",
+  "info": {
+    "name": "transactions"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "proposal": {
+      "model": "proposals"
+    },
+    "contractant": {
+      "model": "contractants"
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "trasactionId": {
+      "type": "string"
+    }
+  }
+}
