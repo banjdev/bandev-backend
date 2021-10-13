@@ -33,6 +33,14 @@
       }
     },
     {
+      "method": "POST",
+      "path": "/transactions/moncash",
+      "handler": "transactions.moncash",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "PUT",
       "path": "/transactions/:id",
       "handler": "transactions.update",
