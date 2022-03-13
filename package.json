@@ -22,7 +22,9 @@
     "strapi-connector-mongoose": "^3.0.0-beta.19.5",
     "strapi-plugin-content-manager": "3.0.0-beta.19.5",
     "strapi-plugin-content-type-builder": "3.0.0-beta.19.5",
+    "strapi-plugin-documentation": "3.0.0-beta.19.5",
     "strapi-plugin-email": "3.0.0-beta.19.5",
+    "strapi-plugin-graphql": "3.0.0-beta.19.5",
     "strapi-plugin-upload": "3.0.0-beta.19.5",
     "strapi-plugin-users-permissions": "3.0.0-beta.19.5",
     "strapi-provider-email-sendgrid": "^3.0.0-alpha.26.2",
@@ -35,7 +37,7 @@
     "uuid": "3187b2aa-5b28-4e93-a335-3af9167e611e"
   },
   "engines": {
-    "node": "12.20.0",
+    "node": "14.17.0",
     "npm": "6.14.8"
   },
   "license": "MIT"
