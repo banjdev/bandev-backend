@@ -1244,6 +1244,126 @@
                 }
               }
             }
+          },
+          "user_profile": {
+            "required": [
+              "id",
+              "login",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "login": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "avatar_url": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "mainfield": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "bio": {
+                "type": "string"
+              },
+              "typeofwork": {
+                "type": "string"
+              },
+              "rem1": {
+                "type": "string"
+              },
+              "rem2": {
+                "type": "string"
+              },
+              "location": {
+                "type": "string"
+              },
+              "devise": {
+                "type": "string"
+              },
+              "education": {
+                "type": "object"
+              },
+              "availaible": {
+                "type": "boolean"
+              },
+              "realisation": {
+                "type": "object"
+              },
+              "tags": {
+                "type": "object"
+              },
+              "darkmode": {
+                "type": "boolean"
+              },
+              "user_login": {
+                "type": "string"
+              },
+              "socialmedia": {
+                "type": "object"
+              },
+              "personal": {
+                "type": "object"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "birthyear": {
+                "type": "integer"
+              },
+              "gender": {
+                "type": "string"
+              },
+              "ttttt": {
+                "type": "string"
+              }
+            }
+          },
+          "address": {
+            "type": "string"
+          },
+          "typeAccount": {
+            "type": "string",
+            "enum": [
+              "freelancer",
+              "enterprise",
+              "administration"
+            ]
+          },
+          "fullname": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "birthyear": {
+            "type": "integer"
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "male",
+              "female"
+            ]
+          },
+          "bio": {
+            "type": "string"
+          },
+          "profileImage": {
+            "type": "string"
           }
         }
       },
@@ -1280,6 +1400,42 @@
             "default": false
           },
           "role": {
+            "type": "string"
+          },
+          "user_profile": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "typeAccount": {
+            "type": "string",
+            "enum": [
+              "freelancer",
+              "enterprise",
+              "administration"
+            ]
+          },
+          "fullname": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "birthyear": {
+            "type": "integer"
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "male",
+              "female"
+            ]
+          },
+          "bio": {
+            "type": "string"
+          },
+          "profileImage": {
             "type": "string"
           }
         }

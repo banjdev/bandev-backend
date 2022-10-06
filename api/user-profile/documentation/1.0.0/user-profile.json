@@ -595,6 +595,91 @@
           "darkmode": {
             "type": "boolean",
             "default": false
+          },
+          "user_login": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "user_profile": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
+              },
+              "typeAccount": {
+                "type": "string"
+              },
+              "fullname": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "birthyear": {
+                "type": "integer"
+              },
+              "gender": {
+                "type": "string"
+              },
+              "bio": {
+                "type": "string"
+              },
+              "profileImage": {
+                "type": "string"
+              }
+            }
+          },
+          "socialmedia": {
+            "type": "object"
+          },
+          "personal": {
+            "type": "object"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "birthyear": {
+            "type": "integer"
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "male",
+              "female"
+            ]
+          },
+          "ttttt": {
+            "type": "string"
           }
         }
       },
@@ -662,6 +747,31 @@
           "darkmode": {
             "type": "boolean",
             "default": false
+          },
+          "user_login": {
+            "type": "string"
+          },
+          "socialmedia": {
+            "type": "object"
+          },
+          "personal": {
+            "type": "object"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "birthyear": {
+            "type": "integer"
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "male",
+              "female"
+            ]
+          },
+          "ttttt": {
+            "type": "string"
           }
         }
       }

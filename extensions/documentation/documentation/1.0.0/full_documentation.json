@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "03/11/2022 5:29:04 PM"
+    "x-generation-date": "10/06/2022 9:56:17 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7193,48 +7193,62 @@
           "contractant": {
             "required": [
               "id",
-              "email",
-              "validated",
-              "createdby"
+              "username",
+              "email"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "compagnie": {
-                "type": "string"
-              },
-              "responsable": {
-                "type": "string"
-              },
-              "telephone": {
-                "type": "string"
-              },
-              "description": {
+              "username": {
                 "type": "string"
               },
               "email": {
                 "type": "string"
               },
+              "provider": {
+                "type": "string"
+              },
               "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "user_profile": {
                 "type": "string"
               },
               "address": {
                 "type": "string"
               },
-              "isadmin": {
-                "type": "boolean"
+              "typeAccount": {
+                "type": "string"
               },
-              "code": {
+              "fullname": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "birthyear": {
                 "type": "integer"
               },
-              "validated": {
-                "type": "boolean"
+              "gender": {
+                "type": "string"
               },
-              "code_expiration": {
-                "type": "integer"
+              "bio": {
+                "type": "string"
               },
-              "createdby": {
+              "profileImage": {
                 "type": "string"
               }
             }
@@ -7253,9 +7267,6 @@
           },
           "place": {
             "type": "string"
-          },
-          "status": {
-            "type": "object"
           },
           "price": {
             "type": "string"
@@ -7284,9 +7295,6 @@
           "typeofwork": {
             "type": "string"
           },
-          "canseeit": {
-            "type": "string"
-          },
           "proposal_accepted": {
             "type": "boolean",
             "default": false
@@ -7294,6 +7302,82 @@
           "postbyadmin": {
             "type": "boolean",
             "default": false
+          },
+          "canseeit": {
+            "type": "object"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "ACTIVE",
+              "NOT_ACTIVE"
+            ]
+          },
+          "contact": {
+            "type": "string"
+          },
+          "winner": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "user_profile": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
+              },
+              "typeAccount": {
+                "type": "string"
+              },
+              "fullname": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "birthyear": {
+                "type": "integer"
+              },
+              "gender": {
+                "type": "string"
+              },
+              "bio": {
+                "type": "string"
+              },
+              "profileImage": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -7321,9 +7405,6 @@
           "place": {
             "type": "string"
           },
-          "status": {
-            "type": "object"
-          },
           "price": {
             "type": "string"
           },
@@ -7351,9 +7432,6 @@
           "typeofwork": {
             "type": "string"
           },
-          "canseeit": {
-            "type": "string"
-          },
           "proposal_accepted": {
             "type": "boolean",
             "default": false
@@ -7361,6 +7439,22 @@
           "postbyadmin": {
             "type": "boolean",
             "default": false
+          },
+          "canseeit": {
+            "type": "object"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "ACTIVE",
+              "NOT_ACTIVE"
+            ]
+          },
+          "contact": {
+            "type": "string"
+          },
+          "winner": {
+            "type": "string"
           }
         }
       },
@@ -7435,6 +7529,27 @@
               },
               "darkmode": {
                 "type": "boolean"
+              },
+              "user_login": {
+                "type": "string"
+              },
+              "socialmedia": {
+                "type": "object"
+              },
+              "personal": {
+                "type": "object"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "birthyear": {
+                "type": "integer"
+              },
+              "gender": {
+                "type": "string"
+              },
+              "ttttt": {
+                "type": "string"
               }
             }
           },
@@ -7466,9 +7581,6 @@
               "place": {
                 "type": "string"
               },
-              "status": {
-                "type": "object"
-              },
               "price": {
                 "type": "string"
               },
@@ -7496,14 +7608,23 @@
               "typeofwork": {
                 "type": "string"
               },
-              "canseeit": {
-                "type": "string"
-              },
               "proposal_accepted": {
                 "type": "boolean"
               },
               "postbyadmin": {
                 "type": "boolean"
+              },
+              "canseeit": {
+                "type": "object"
+              },
+              "status": {
+                "type": "string"
+              },
+              "contact": {
+                "type": "string"
+              },
+              "winner": {
+                "type": "string"
               }
             }
           },
@@ -7686,9 +7807,6 @@
               "place": {
                 "type": "string"
               },
-              "status": {
-                "type": "object"
-              },
               "price": {
                 "type": "string"
               },
@@ -7716,14 +7834,23 @@
               "typeofwork": {
                 "type": "string"
               },
-              "canseeit": {
-                "type": "string"
-              },
               "proposal_accepted": {
                 "type": "boolean"
               },
               "postbyadmin": {
                 "type": "boolean"
+              },
+              "canseeit": {
+                "type": "object"
+              },
+              "status": {
+                "type": "string"
+              },
+              "contact": {
+                "type": "string"
+              },
+              "winner": {
+                "type": "string"
               }
             }
           },
@@ -8019,6 +8146,91 @@
           "darkmode": {
             "type": "boolean",
             "default": false
+          },
+          "user_login": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "user_profile": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
+              },
+              "typeAccount": {
+                "type": "string"
+              },
+              "fullname": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "birthyear": {
+                "type": "integer"
+              },
+              "gender": {
+                "type": "string"
+              },
+              "bio": {
+                "type": "string"
+              },
+              "profileImage": {
+                "type": "string"
+              }
+            }
+          },
+          "socialmedia": {
+            "type": "object"
+          },
+          "personal": {
+            "type": "object"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "birthyear": {
+            "type": "integer"
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "male",
+              "female"
+            ]
+          },
+          "ttttt": {
+            "type": "string"
           }
         }
       },
@@ -8086,6 +8298,31 @@
           "darkmode": {
             "type": "boolean",
             "default": false
+          },
+          "user_login": {
+            "type": "string"
+          },
+          "socialmedia": {
+            "type": "object"
+          },
+          "personal": {
+            "type": "object"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "birthyear": {
+            "type": "integer"
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "male",
+              "female"
+            ]
+          },
+          "ttttt": {
+            "type": "string"
           }
         }
       },
@@ -8177,6 +8414,33 @@
                   "type": "boolean"
                 },
                 "role": {
+                  "type": "string"
+                },
+                "user_profile": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "typeAccount": {
+                  "type": "string"
+                },
+                "fullname": {
+                  "type": "string"
+                },
+                "phone": {
+                  "type": "string"
+                },
+                "birthyear": {
+                  "type": "integer"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "bio": {
+                  "type": "string"
+                },
+                "profileImage": {
                   "type": "string"
                 }
               }
@@ -8273,6 +8537,126 @@
                 }
               }
             }
+          },
+          "user_profile": {
+            "required": [
+              "id",
+              "login",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "login": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "avatar_url": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "mainfield": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "bio": {
+                "type": "string"
+              },
+              "typeofwork": {
+                "type": "string"
+              },
+              "rem1": {
+                "type": "string"
+              },
+              "rem2": {
+                "type": "string"
+              },
+              "location": {
+                "type": "string"
+              },
+              "devise": {
+                "type": "string"
+              },
+              "education": {
+                "type": "object"
+              },
+              "availaible": {
+                "type": "boolean"
+              },
+              "realisation": {
+                "type": "object"
+              },
+              "tags": {
+                "type": "object"
+              },
+              "darkmode": {
+                "type": "boolean"
+              },
+              "user_login": {
+                "type": "string"
+              },
+              "socialmedia": {
+                "type": "object"
+              },
+              "personal": {
+                "type": "object"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "birthyear": {
+                "type": "integer"
+              },
+              "gender": {
+                "type": "string"
+              },
+              "ttttt": {
+                "type": "string"
+              }
+            }
+          },
+          "address": {
+            "type": "string"
+          },
+          "typeAccount": {
+            "type": "string",
+            "enum": [
+              "freelancer",
+              "enterprise",
+              "administration"
+            ]
+          },
+          "fullname": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "birthyear": {
+            "type": "integer"
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "male",
+              "female"
+            ]
+          },
+          "bio": {
+            "type": "string"
+          },
+          "profileImage": {
+            "type": "string"
           }
         }
       },
@@ -8309,6 +8693,42 @@
             "default": false
           },
           "role": {
+            "type": "string"
+          },
+          "user_profile": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "typeAccount": {
+            "type": "string",
+            "enum": [
+              "freelancer",
+              "enterprise",
+              "administration"
+            ]
+          },
+          "fullname": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "birthyear": {
+            "type": "integer"
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "male",
+              "female"
+            ]
+          },
+          "bio": {
+            "type": "string"
+          },
+          "profileImage": {
             "type": "string"
           }
         }

@@ -53,6 +53,43 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
+    },
+    "user_profile": {
+      "via": "user_login",
+      "model": "user-profile"
+    },
+    "address": {
+      "type": "string"
+    },
+    "typeAccount": {
+      "type": "enumeration",
+      "enum": [
+        "freelancer",
+        "enterprise",
+        "administration"
+      ]
+    },
+    "fullname": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "birthyear": {
+      "type": "integer"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "bio": {
+      "type": "text"
+    },
+    "profileImage": {
+      "type": "text"
     }
   }
 }

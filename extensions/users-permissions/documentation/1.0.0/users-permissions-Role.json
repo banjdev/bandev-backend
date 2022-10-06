@@ -608,6 +608,33 @@
                 },
                 "role": {
                   "type": "string"
+                },
+                "user_profile": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "typeAccount": {
+                  "type": "string"
+                },
+                "fullname": {
+                  "type": "string"
+                },
+                "phone": {
+                  "type": "string"
+                },
+                "birthyear": {
+                  "type": "integer"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "bio": {
+                  "type": "string"
+                },
+                "profileImage": {
+                  "type": "string"
                 }
               }
             }

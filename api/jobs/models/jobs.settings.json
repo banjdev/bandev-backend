@@ -11,7 +11,8 @@
   },
   "attributes": {
     "contractant": {
-      "model": "contractants"
+      "plugin": "users-permissions",
+      "model": "user"
     },
     "category": {
       "type": "string"
@@ -27,9 +28,6 @@
     },
     "place": {
       "type": "string"
-    },
-    "status": {
-      "type": "json"
     },
     "price": {
       "type": "string"
@@ -58,9 +56,6 @@
     "typeofwork": {
       "type": "string"
     },
-    "canseeit": {
-      "type": "string"
-    },
     "proposal_accepted": {
       "type": "boolean",
       "default": false,
@@ -70,6 +65,23 @@
       "type": "boolean",
       "required": true,
       "default": false
+    },
+    "canseeit": {
+      "type": "json"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "ACTIVE",
+        "NOT_ACTIVE"
+      ]
+    },
+    "contact": {
+      "type": "string"
+    },
+    "winner": {
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

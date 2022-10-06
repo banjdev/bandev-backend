@@ -585,6 +585,27 @@
               },
               "darkmode": {
                 "type": "boolean"
+              },
+              "user_login": {
+                "type": "string"
+              },
+              "socialmedia": {
+                "type": "object"
+              },
+              "personal": {
+                "type": "object"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "birthyear": {
+                "type": "integer"
+              },
+              "gender": {
+                "type": "string"
+              },
+              "ttttt": {
+                "type": "string"
               }
             }
           },
@@ -616,9 +637,6 @@
               "place": {
                 "type": "string"
               },
-              "status": {
-                "type": "object"
-              },
               "price": {
                 "type": "string"
               },
@@ -646,14 +664,23 @@
               "typeofwork": {
                 "type": "string"
               },
-              "canseeit": {
-                "type": "string"
-              },
               "proposal_accepted": {
                 "type": "boolean"
               },
               "postbyadmin": {
                 "type": "boolean"
+              },
+              "canseeit": {
+                "type": "object"
+              },
+              "status": {
+                "type": "string"
+              },
+              "contact": {
+                "type": "string"
+              },
+              "winner": {
+                "type": "string"
               }
             }
           },

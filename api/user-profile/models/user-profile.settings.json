@@ -72,6 +72,33 @@
     "darkmode": {
       "type": "boolean",
       "default": false
+    },
+    "user_login": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "user_profile"
+    },
+    "socialmedia": {
+      "type": "json"
+    },
+    "personal": {
+      "type": "json"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "birthyear": {
+      "type": "integer"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "ttttt": {
+      "type": "string"
     }
   }
 }
